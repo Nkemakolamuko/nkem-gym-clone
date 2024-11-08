@@ -11,24 +11,25 @@
     <title>FeWo-direkt | Home</title>
   </head>
   <body>
+    <!-- Header and my hero section -->
     <div
       class="h-[100vh] relative bg-[url(https://forever.travel-assets.com/flex/flexmanager/images/2022/08/02/2022-06-05_Vrbo_APFT2_Barcelona_Therin_House_2_4605_2.png)] bg-cover bg-center bg-no-repeat"
     >
       <div class="absolute h-full w-full bg-black/30"></div>
       <header
-        class="flex justify-between items-center py-5 px-16 bg-white z-10 absolute w-full"
+        class="flex justify-between items-center py-5 px-20 bg-white z-10 absolute w-full"
       >
-        <h2 class="text-4xl font-semibold text-[#0067DB] leading-[1.125rem]">
-          FeWo-direkt
+        <h2 class="">
+          <img src="./assets/logo.png" />
         </h2>
         <nav>
           <ul
-            class="text-[#191e3b] font-semibold flex items-center gap-8 text-[.875rem] leading-[1.125rem]"
+            class="text-[#191e3b] font-semibold flex items-center gap-6 text-[.875rem] leading-[1.125rem]"
           >
             <li>
               <a
                 href="#"
-                class="border rounded-full border-slate-500 px-2 py-2 flex items-center gap-2"
+                class="border rounded-full border-slate-300 px-4 py-1 flex items-center gap-2"
                 ><i class="fa-solid fa-download text-[#0067DB]"></i
                 ><span>Download the app</span></a
               >
@@ -83,8 +84,8 @@
               <span
                 class="w-full outline-none active:outline-none focus:outline-none font-medium flex flex-col"
               >
-                <span class="text-xs">Guests</span>
-                <span>Two travelers</span>
+                <span class="text-xs">guests</span>
+                <span>2 travelers</span>
               </span>
             </p>
 
@@ -98,14 +99,20 @@
       </div>
     </div>
 
-    <!-- <main>
+    <main class="container mx-auto bg-white">
       <section
-        class="flex items-center justify-center h-[90vh] bg-[url(https://forever.travel-assets.com/flex/flexmanager/images/2022/08/02/2022-06-05_Vrbo_APFT2_Barcelona_Therin_House_2_4605_2.png)] bg-cover bg-center bg-no-repeat"
+        class="flex justify-between items-center py-4 px-4 bg-[#191E3B] text-white rounded-xl my-10"
       >
-        <h1 class="text-4xl font-semibold text-[#0067DB] leading-[1.125rem]">
-          FeWo-direkt
-        </h1>
+        <div class="flex items-center gap-4 cursor-default">
+          <p class="rounded-full bg-[#AED1F3] px-3 py-2">
+            <fa class="fa-solid fa-heart text-2xl text-[#191E3B]"></fa>
+          </p>
+          <p class="text-white font-semibold">
+            Sign in to save your favorites and start planning your next trip.
+          </p>
+        </div>
+        <p class="text-sm text-white font-semibold">Register</p>
       </section>
-    </main> -->
+    </main>
   </body>
 </html>
