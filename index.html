@@ -8,6 +8,7 @@
       src="https://kit.fontawesome.com/03ecdfcafe.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="style.css" />
     <title>FeWo-direkt | Home</title>
   </head>
   <body>
@@ -52,8 +53,8 @@
           Everything is fine, you book with FeWo- <br />
           direkt
         </p>
-
-        <div class="bottom-10 w-[100%] container mx-auto">
+        <!-- I added the top-0 sticky and z-10 to make it sticky when it gets to the top, but it didn't work as expected -->
+        <div class="bottom-10 w-[100%] container mx-auto top-0 sticky z-10">
           <div
             class="flex items-center p-3 gap-3 bg-[#fff]/90 rounded-2xl w-[95%] mx-auto"
           >
@@ -90,7 +91,7 @@
             </p>
 
             <p
-              class="py-3 px-4 rounded-full bg-[#191E3B] text-white font-semibold"
+              class="py-3 px-4 rounded-full bg-[#191E3B] text-white font-semibold cursor-pointer"
             >
               Seek
             </p>
@@ -99,7 +100,8 @@
       </div>
     </div>
 
-    <main class="container mx-auto bg-white">
+    <!-- Sign in to save favorites -->
+    <main class="container mx-auto bg-white px-8">
       <section
         class="flex justify-between items-center py-4 px-4 bg-[#191E3B] text-white rounded-xl my-10"
       >
@@ -112,6 +114,515 @@
           </p>
         </div>
         <p class="text-sm text-white font-semibold">Register</p>
+      </section>
+
+      <!-- Find accommodations cards -->
+      <section class="my-10 relative group">
+        <h2 class="text-3xl text-[#191E3B] font-semibold my-4">
+          Find accommodations to suit your taste
+        </h2>
+
+        <!-- Scroll Icons -->
+        <i
+          class="fa-solid fa-arrow-left text-2xl text-[#191E3B] absolute left-0 z-10 cursor-pointer top-[50%] translate-y-[-50%] bg-[#fff] py-2 px-3 rounded-full hidden group-hover:block"
+        ></i>
+        <i
+          class="fa-solid fa-arrow-right text-2xl text-[#191E3B] absolute right-0 z-10 cursor-pointer top-[50%] translate-y-[-50%] bg-[#fff] py-2 px-3 rounded-full hidden group-hover:block"
+        ></i>
+
+        <!-- Cards -->
+        <div
+          class="w-full md:flex-nowrap no-scrollbar overflow-x-auto flex h-[45vh] space-x-3"
+        >
+          <a href="#" class="relative">
+            <img
+              src="https://forever.travel-assets.com/flex/flexmanager/images/2024/03/06/VRBO_OOH_TRUST_LISBON_HOUSE_NATACHA_WIDE_BACKDOOR_HUMM_0004.jpg"
+              class="rounded-2xl min-w-[240px] h-full"
+            />
+            <span class="absolute bottom-0 left-3"
+              ><span class="text-[#fff] font-semibold">holiday home</span></span
+            >
+          </a>
+          <a href="#" class="relative">
+            <img
+              src="https://forever.travel-assets.com/flex/flexmanager/mediaasset/732141-0_2-VRBO_HOSTS_LA_SAUNA_NEBELING_0101.jpg"
+              class="rounded-2xl min-w-[240px] h-full"
+            />
+            <span class="absolute bottom-0 left-3"
+              ><span class="text-[#fff] font-semibold">holiday home</span></span
+            >
+          </a>
+          <a href="#" class="relative">
+            <img
+              src="https://images.trvl-media.com/lodging/24000000/23090000/23089100/23089080/213fcdf0.jpg"
+            />
+            <span class="absolute bottom-0 left-3"
+              ><span class="text-[#fff] font-semibold">holiday home</span></span
+            >
+          </a>
+          <a href="#" class="relative">
+            <img
+              src="https://images.trvl-media.com/lodging/73000000/72920000/72914700/72914664/79aabf2d.jpg"
+              class="rounded-2xl min-w-[240px] h-full"
+            />
+            <span class="absolute bottom-0 left-3"
+              ><span class="text-[#fff] font-semibold">holiday home</span></span
+            >
+          </a>
+          <a href="#" class="relative">
+            <img
+              src="https://images.trvl-media.com/lodging/45000000/44450000/44444600/44444524/120ff187.jpg"
+              class="rounded-2xl min-w-[240px] h-full"
+            />
+            <span class="absolute bottom-0 left-3"
+              ><span class="text-[#fff] font-semibold">holiday home</span></span
+            >
+          </a>
+          <a href="#" class="relative">
+            <img
+              src="https://images.trvl-media.com/lodging/64000000/63690000/63684600/63684590/166ff7c9.jpg"
+              class="rounded-2xl min-w-[240px] h-full"
+            />
+            <span class="absolute bottom-0 left-3"
+              ><span class="text-[#fff] font-semibold">holiday home</span></span
+            >
+          </a>
+          <a href="#" class="relative">
+            <img
+              src="https://mediaim.expedia.com/destination/9/b6f99f260e32ebc1ae01665407dda889.jpg"
+              class="rounded-2xl min-w-[240px] h-full"
+            />
+            <span class="absolute bottom-0 left-3"
+              ><span class="text-[#fff] font-semibold">holiday home</span></span
+            >
+          </a>
+          <a href="#" class="relative">
+            <img
+              src="https://images.trvl-media.com/lodging/19000000/18770000/18764500/18764475/b0071679.jpg"
+              class="rounded-2xl min-w-[240px] h-full"
+            />
+            <span class="absolute bottom-0 left-3"
+              ><span class="text-[#fff] font-semibold">holiday home</span></span
+            >
+          </a>
+          <a href="#" class="relative">
+            <img
+              src="https://images.trvl-media.com/lodging/34000000/33970000/33966600/33966571/491e8d3f.jpg"
+              class="rounded-2xl min-w-[240px] h-full"
+            />
+            <span class="absolute bottom-0 left-3"
+              ><span class="text-[#fff] font-semibold">holiday home</span></span
+            >
+          </a>
+          <a href="#" class="relative">
+            <img
+              src="https://images.trvl-media.com/lodging/33000000/32600000/32590100/32590065/ca4f20f1.jpg"
+              class="rounded-2xl min-w-[240px] h-full"
+            />
+            <span class="absolute bottom-0 left-3"
+              ><span class="text-[#fff] font-semibold">holiday home</span></span
+            >
+          </a>
+          <a href="#" class="relative">
+            <img
+              src="https://images.trvl-media.com/lodging/75000000/74630000/74622200/74622115/f4fb7fe1.jpg"
+              class="rounded-2xl min-w-[240px] h-full"
+            />
+            <span class="absolute bottom-0 left-3"
+              ><span class="text-[#fff] font-semibold">holiday home</span></span
+            >
+          </a>
+          <a href="#" class="relative">
+            <img
+              src="https://images.trvl-media.com/lodging/34000000/33940000/33938200/33938126/ac1017fb.jpg"
+              class="rounded-2xl min-w-[240px] h-full"
+            />
+            <span class="absolute bottom-0 left-3"
+              ><span class="text-[#fff] font-semibold">holiday home</span></span
+            >
+          </a>
+          <a href="#" class="relative">
+            <img
+              src="https://images.trvl-media.com/lodging/96000000/95580000/95575200/95575106/7b499845.jpg"
+              class="rounded-2xl min-w-[240px] h-full"
+            />
+            <span class="absolute bottom-0 left-3"
+              ><span class="text-[#fff] font-semibold">holiday home</span></span
+            >
+          </a>
+          <a href="#" class="relative">
+            <img
+              src="https://images.trvl-media.com/lodging/21000000/20490000/20480500/20480433/6fe83dd9.jpg"
+              class="rounded-2xl min-w-[240px] h-full"
+            />
+            <span class="absolute bottom-0 left-3"
+              ><span class="text-[#fff] font-semibold">holiday home</span></span
+            >
+          </a>
+          <a href="#" class="relative">
+            <img
+              src="https://images.trvl-media.com/lodging/35000000/34100000/34091400/34091400/f3dd8015.jpg"
+              class="rounded-2xl min-w-[240px] h-full"
+            />
+            <span class="absolute bottom-0 left-3"
+              ><span class="text-[#fff] font-semibold">holiday home</span></span
+            >
+          </a>
+          <a href="#" class="relative">
+            <img
+              src="https://mediaim.expedia.com/destination/9/191dcb074564e1577247dcdce8666268.jpg"
+              class="rounded-2xl min-w-[240px] h-full"
+            />
+            <span class="absolute bottom-0 left-3"
+              ><span class="text-[#fff] font-semibold">holiday home</span></span
+            >
+          </a>
+        </div>
+      </section>
+
+      <!-- The second section with a dark brown background for the Browse weekend trips -->
+      <section
+        class="bg-[url('https://images.trvl-media.com/lodging/38000000/37780000/37779400/37779376/a3a74466.jpg')] bg-cover bg-center bg-no-repeat h-[95vh] rounded-2xl relative mb-10"
+      >
+        <div
+          class="absolute w-full h-full bg-gradient-to-t from-[#39312C] to-[#39312C]/50 rounded-2xl"
+        ></div>
+
+        <div class="flex flex-col container mx-auto pl-[54px] pt-[120px]">
+          <div class="flex flex-col mb-4 z-10 text-white">
+            <p class="font-semibold text-3xl">Browse weekend trips</p>
+            <p>
+              <span class="text-sm">Offers for the period: </span>
+              <span class="text-sm font-semibold">13 Dec. - 15 Dec.</span>
+            </p>
+          </div>
+
+          <div
+            class="w-full md:flex-nowrap no-scrollbar overflow-x-auto flex h-[70%] space-x-3"
+          >
+            <div class="flex flex-col z-10 text-white gap-2 w-[270px]">
+              <img
+                src="https://forever.travel-assets.com/flex/flexmanager/images/2024/03/06/VRBO_OOH_TRUST_LISBON_HOUSE_NATACHA_WIDE_BACKDOOR_HUMM_0004.jpg"
+                alt="Image"
+                class="rounded-2xl h-[35%] w-full"
+              />
+
+              <div class="flex flex-col gap-2 truncate max-w-fit">
+                <p class="text-sm">Dahlem, North Rhine-Westphalia</p>
+                <p class="truncate text-xl font-semibold truncate">
+                  Detached holiday home in the Eifel, allergy-friendly and
+                  pet-friendly and some other info
+                </p>
+                <p class="flex items-center text-sm gap-2">
+                  <span class="bg-green-300 text-blue-800 rounded px-2 py-1"
+                    >10.0</span
+                  >
+                  <span class="font-semibold">Unusual</span>
+                  <span>(109 reviews)</span>
+                </p>
+
+                <p class="flex flex-col">
+                  <span class="font-semibold text-[20px]">216 €</span>
+                  <span class="text-sm">for 2 nights</span>
+                  <span class="text-sm">108 € per night</span>
+                  <span class="text-sm">incl. taxes & fees</span>
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col z-10 text-white gap-2 w-[270px]">
+              <img
+                src="https://forever.travel-assets.com/flex/flexmanager/images/2024/03/06/VRBO_OOH_TRUST_LISBON_HOUSE_NATACHA_WIDE_BACKDOOR_HUMM_0004.jpg"
+                alt="Image"
+                class="rounded-2xl h-[35%] w-full"
+              />
+
+              <div class="flex flex-col gap-2 truncate max-w-fit">
+                <p class="text-sm">Dahlem, North Rhine-Westphalia</p>
+                <p class="truncate text-xl font-semibold truncate">
+                  Detached holiday home in the Eifel, allergy-friendly and
+                  pet-friendly and some other info
+                </p>
+                <p class="flex items-center text-sm gap-2">
+                  <span class="bg-green-300 text-blue-800 rounded px-2 py-1"
+                    >10.0</span
+                  >
+                  <span class="font-semibold">Unusual</span>
+                  <span>(109 reviews)</span>
+                </p>
+
+                <p class="flex flex-col">
+                  <span class="font-semibold text-[20px]">216 €</span>
+                  <span class="text-sm">for 2 nights</span>
+                  <span class="text-sm">108 € per night</span>
+                  <span class="text-sm">incl. taxes & fees</span>
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col z-10 text-white gap-2 w-[270px]">
+              <img
+                src="https://forever.travel-assets.com/flex/flexmanager/images/2024/03/06/VRBO_OOH_TRUST_LISBON_HOUSE_NATACHA_WIDE_BACKDOOR_HUMM_0004.jpg"
+                alt="Image"
+                class="rounded-2xl h-[35%] w-full"
+              />
+
+              <div class="flex flex-col gap-2 truncate max-w-fit">
+                <p class="text-sm">Dahlem, North Rhine-Westphalia</p>
+                <p class="truncate text-xl font-semibold truncate">
+                  Detached holiday home in the Eifel, allergy-friendly and
+                  pet-friendly and some other info
+                </p>
+                <p class="flex items-center text-sm gap-2">
+                  <span class="bg-green-300 text-blue-800 rounded px-2 py-1"
+                    >10.0</span
+                  >
+                  <span class="font-semibold">Unusual</span>
+                  <span>(109 reviews)</span>
+                </p>
+
+                <p class="flex flex-col">
+                  <span class="font-semibold text-[20px]">216 €</span>
+                  <span class="text-sm">for 2 nights</span>
+                  <span class="text-sm">108 € per night</span>
+                  <span class="text-sm">incl. taxes & fees</span>
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col z-10 text-white gap-2 w-[270px]">
+              <img
+                src="https://forever.travel-assets.com/flex/flexmanager/images/2024/03/06/VRBO_OOH_TRUST_LISBON_HOUSE_NATACHA_WIDE_BACKDOOR_HUMM_0004.jpg"
+                alt="Image"
+                class="rounded-2xl h-[35%] w-full"
+              />
+
+              <div class="flex flex-col gap-2 truncate max-w-fit">
+                <p class="text-sm">Dahlem, North Rhine-Westphalia</p>
+                <p class="truncate text-xl font-semibold truncate">
+                  Detached holiday home in the Eifel, allergy-friendly and
+                  pet-friendly and some other info
+                </p>
+                <p class="flex items-center text-sm gap-2">
+                  <span class="bg-green-300 text-blue-800 rounded px-2 py-1"
+                    >10.0</span
+                  >
+                  <span class="font-semibold">Unusual</span>
+                  <span>(109 reviews)</span>
+                </p>
+
+                <p class="flex flex-col">
+                  <span class="font-semibold text-[20px]">216 €</span>
+                  <span class="text-sm">for 2 nights</span>
+                  <span class="text-sm">108 € per night</span>
+                  <span class="text-sm">incl. taxes & fees</span>
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col z-10 text-white gap-2 w-[270px]">
+              <img
+                src="https://forever.travel-assets.com/flex/flexmanager/images/2024/03/06/VRBO_OOH_TRUST_LISBON_HOUSE_NATACHA_WIDE_BACKDOOR_HUMM_0004.jpg"
+                alt="Image"
+                class="rounded-2xl h-[35%] w-full"
+              />
+
+              <div class="flex flex-col gap-2 truncate max-w-fit">
+                <p class="text-sm">Dahlem, North Rhine-Westphalia</p>
+                <p class="truncate text-xl font-semibold truncate">
+                  Detached holiday home in the Eifel, allergy-friendly and
+                  pet-friendly and some other info
+                </p>
+                <p class="flex items-center text-sm gap-2">
+                  <span class="bg-green-300 text-blue-800 rounded px-2 py-1"
+                    >10.0</span
+                  >
+                  <span class="font-semibold">Unusual</span>
+                  <span>(109 reviews)</span>
+                </p>
+
+                <p class="flex flex-col">
+                  <span class="font-semibold text-[20px]">216 €</span>
+                  <span class="text-sm">for 2 nights</span>
+                  <span class="text-sm">108 € per night</span>
+                  <span class="text-sm">incl. taxes & fees</span>
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col z-10 text-white gap-2 w-[270px]">
+              <img
+                src="https://forever.travel-assets.com/flex/flexmanager/images/2024/03/06/VRBO_OOH_TRUST_LISBON_HOUSE_NATACHA_WIDE_BACKDOOR_HUMM_0004.jpg"
+                alt="Image"
+                class="rounded-2xl h-[35%] w-full"
+              />
+
+              <div class="flex flex-col gap-2 truncate max-w-fit">
+                <p class="text-sm">Dahlem, North Rhine-Westphalia</p>
+                <p class="truncate text-xl font-semibold truncate">
+                  Detached holiday home in the Eifel, allergy-friendly and
+                  pet-friendly and some other info
+                </p>
+                <p class="flex items-center text-sm gap-2">
+                  <span class="bg-green-300 text-blue-800 rounded px-2 py-1"
+                    >10.0</span
+                  >
+                  <span class="font-semibold">Unusual</span>
+                  <span>(109 reviews)</span>
+                </p>
+
+                <p class="flex flex-col">
+                  <span class="font-semibold text-[20px]">216 €</span>
+                  <span class="text-sm">for 2 nights</span>
+                  <span class="text-sm">108 € per night</span>
+                  <span class="text-sm">incl. taxes & fees</span>
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col z-10 text-white gap-2 w-[270px]">
+              <img
+                src="https://forever.travel-assets.com/flex/flexmanager/images/2024/03/06/VRBO_OOH_TRUST_LISBON_HOUSE_NATACHA_WIDE_BACKDOOR_HUMM_0004.jpg"
+                alt="Image"
+                class="rounded-2xl h-[35%] w-full"
+              />
+
+              <div class="flex flex-col gap-2 truncate max-w-fit">
+                <p class="text-sm">Dahlem, North Rhine-Westphalia</p>
+                <p class="truncate text-xl font-semibold truncate">
+                  Detached holiday home in the Eifel, allergy-friendly and
+                  pet-friendly and some other info
+                </p>
+                <p class="flex items-center text-sm gap-2">
+                  <span class="bg-green-300 text-blue-800 rounded px-2 py-1"
+                    >10.0</span
+                  >
+                  <span class="font-semibold">Unusual</span>
+                  <span>(109 reviews)</span>
+                </p>
+
+                <p class="flex flex-col">
+                  <span class="font-semibold text-[20px]">216 €</span>
+                  <span class="text-sm">for 2 nights</span>
+                  <span class="text-sm">108 € per night</span>
+                  <span class="text-sm">incl. taxes & fees</span>
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col z-10 text-white gap-2 w-[270px]">
+              <img
+                src="https://forever.travel-assets.com/flex/flexmanager/images/2024/03/06/VRBO_OOH_TRUST_LISBON_HOUSE_NATACHA_WIDE_BACKDOOR_HUMM_0004.jpg"
+                alt="Image"
+                class="rounded-2xl h-[35%] w-full"
+              />
+
+              <div class="flex flex-col gap-2 truncate max-w-fit">
+                <p class="text-sm">Dahlem, North Rhine-Westphalia</p>
+                <p class="truncate text-xl font-semibold truncate">
+                  Detached holiday home in the Eifel, allergy-friendly and
+                  pet-friendly and some other info
+                </p>
+                <p class="flex items-center text-sm gap-2">
+                  <span class="bg-green-300 text-blue-800 rounded px-2 py-1"
+                    >10.0</span
+                  >
+                  <span class="font-semibold">Unusual</span>
+                  <span>(109 reviews)</span>
+                </p>
+
+                <p class="flex flex-col">
+                  <span class="font-semibold text-[20px]">216 €</span>
+                  <span class="text-sm">for 2 nights</span>
+                  <span class="text-sm">108 € per night</span>
+                  <span class="text-sm">incl. taxes & fees</span>
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col z-10 text-white gap-2 w-[270px]">
+              <img
+                src="https://forever.travel-assets.com/flex/flexmanager/images/2024/03/06/VRBO_OOH_TRUST_LISBON_HOUSE_NATACHA_WIDE_BACKDOOR_HUMM_0004.jpg"
+                alt="Image"
+                class="rounded-2xl h-[35%] w-full"
+              />
+
+              <div class="flex flex-col gap-2 truncate max-w-fit">
+                <p class="text-sm">Dahlem, North Rhine-Westphalia</p>
+                <p class="truncate text-xl font-semibold truncate">
+                  Detached holiday home in the Eifel, allergy-friendly and
+                  pet-friendly and some other info
+                </p>
+                <p class="flex items-center text-sm gap-2">
+                  <span class="bg-green-300 text-blue-800 rounded px-2 py-1"
+                    >10.0</span
+                  >
+                  <span class="font-semibold">Unusual</span>
+                  <span>(109 reviews)</span>
+                </p>
+
+                <p class="flex flex-col">
+                  <span class="font-semibold text-[20px]">216 €</span>
+                  <span class="text-sm">for 2 nights</span>
+                  <span class="text-sm">108 € per night</span>
+                  <span class="text-sm">incl. taxes & fees</span>
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col z-10 text-white gap-2 w-[270px]">
+              <img
+                src="https://forever.travel-assets.com/flex/flexmanager/images/2024/03/06/VRBO_OOH_TRUST_LISBON_HOUSE_NATACHA_WIDE_BACKDOOR_HUMM_0004.jpg"
+                alt="Image"
+                class="rounded-2xl h-[35%] w-full"
+              />
+
+              <div class="flex flex-col gap-2 truncate max-w-fit">
+                <p class="text-sm">Dahlem, North Rhine-Westphalia</p>
+                <p class="truncate text-xl font-semibold truncate">
+                  Detached holiday home in the Eifel, allergy-friendly and
+                  pet-friendly and some other info
+                </p>
+                <p class="flex items-center text-sm gap-2">
+                  <span class="bg-green-300 text-blue-800 rounded px-2 py-1"
+                    >10.0</span
+                  >
+                  <span class="font-semibold">Unusual</span>
+                  <span>(109 reviews)</span>
+                </p>
+
+                <p class="flex flex-col">
+                  <span class="font-semibold text-[20px]">216 €</span>
+                  <span class="text-sm">for 2 nights</span>
+                  <span class="text-sm">108 € per night</span>
+                  <span class="text-sm">incl. taxes & fees</span>
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col z-10 text-white gap-2 w-[270px] pr-[24px]"
+            >
+              <img
+                src="https://forever.travel-assets.com/flex/flexmanager/images/2024/03/06/VRBO_OOH_TRUST_LISBON_HOUSE_NATACHA_WIDE_BACKDOOR_HUMM_0004.jpg"
+                alt="Image"
+                class="rounded-2xl h-[35%] w-full"
+              />
+
+              <div class="flex flex-col gap-2 truncate max-w-fit">
+                <p class="text-sm">Dahlem, North Rhine-Westphalia</p>
+                <p class="truncate text-xl font-semibold truncate">
+                  Detached holiday home in the Eifel, allergy-friendly and
+                  pet-friendly and some other info
+                </p>
+                <p class="flex items-center text-sm gap-2">
+                  <span class="bg-green-300 text-blue-800 rounded px-2 py-1"
+                    >10.0</span
+                  >
+                  <span class="font-semibold">Unusual</span>
+                  <span>(109 reviews)</span>
+                </p>
+
+                <p class="flex flex-col">
+                  <span class="font-semibold text-[20px]">216 €</span>
+                  <span class="text-sm">for 2 nights</span>
+                  <span class="text-sm">108 € per night</span>
+                  <span class="text-sm">incl. taxes & fees</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   </body>
